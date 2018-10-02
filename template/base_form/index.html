@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>메인페이지</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font_notosanskr.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <!-- js -->
+  <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="./js/common.js" type="text/javascript"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
+  <script src="./js/swiper.min.js" type="text/javascript"></script>
+  <script src="./js/TweenLite.min.js" type="text/javascript"></script>
+  <script src="./js/ScrollToPlugin.min.js" type="text/javascript"></script>
+  <script src="./js/code.js" type="text/javascript"></script>
+  <script src="./slick/slick.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="header" class="clearfix">
+    <h1 class="logo">
+        <img src="./images/common/logo.jpg" alt="">
+      </h1>
+
+    <div class="box1"><span>WHAT ?</span></div>
+    <div class="letter"><span>News Letter</span></div>
+    <ul id="gnb" class="clearfix">
+      <li class=""><a href="#void">Product</a></li>
+      <li class=""><a href="#void">Inspiration</a></li>
+      <li class=""><a href="#void">Magazine</a></li>
+      <li class=""><a href="#void">Support</a></li>
+      <li class=""><a href="#void">About</a></li>
+    </ul>
+  </div>
+
+  <div id="mainslider">
+    <div class="mainslider_inner mainslide01"></div>
+    <div class="mainslider_inner mainslide02"></div>
+    <div class="mainslider_inner mainslide03"></div>
+    <div class="mainslider_inner mainslide04"></div>
+    <div class="mainslider_inner mainslide05"></div>
+  </div>
+
+  <div id="content" style="height: 1000px;">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url(./images/main/sns1.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns2.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns3.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns4.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns5.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns6.jpg);border:1px solid #ccc;"></div>
+        <div class="swiper-slide" style="background: url(./images/main/sns7.jpg);border:1px solid #ccc;"></div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="byg">
+      <ul class="clearfix">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="show"></div>
+    </div>
+
+    <style>
+      #content .show {width: 400px;height: 400px;border:1px solid #555;box-sizing:border-box;margin-top: 50px;}
+      #content ul {padding-top: 100px;}
+      #content ul li {float: left;width: 100px;height: 200px;}
+      #content ul li:nth-child(1) {background-color: #ff2e00;}
+      #content ul li:nth-child(2) {background-color: green;}
+      #content ul li:nth-child(3) {background-color: yellow;}
+      #content ul li:nth-child(4) {background-color: blue;}
+    </style>
+
+    <script>
+      $(document).ready(function() {
+        var list = $( "#content ul li" );
+        var bg = "";
+        for(var i=0;i<list.length;i++)
+        {
+          list.eq(i).mouseenter(function(){
+            var test = $(this).css("background-color");
+            $('.show').css({
+              'background-color':test
+            })
+          })
+        }
+      })
+    </script>
+  </div>
+</body>
+
+</html>

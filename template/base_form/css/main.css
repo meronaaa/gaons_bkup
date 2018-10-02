@@ -1,0 +1,10 @@
+/* slider */
+#mainslider {width: 100%;position: absolute;top: 0;z-index: 1;}
+#mainslider .mainslider_inner {height: 600px;width: 100%;position: relative;background-repeat: no-repeat;background-position: center;background-size: 100% 100%;}
+#mainslider .mainslide01 {background-image: url(../images/main/mainslide04.jpg);}
+#mainslider .mainslide02 {background-image: url(../images/main/mainslide00.jpg);}
+#mainslider .mainslide03 {background-image: url(../images/main/mainslide03.jpg);}
+#mainslider .mainslide04 {background-image: url(../images/main/mainslide02.jpg);}
+#mainslider .mainslide05 {background-image: url(../images/main/mainslide01.jpg);}
+
+#content {}
